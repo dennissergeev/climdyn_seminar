@@ -1,8 +1,134 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Denis Sergeev," />
+  <meta name="author" content="Hugo Lambert, Nathan Mayne, Ian Boutle" />
+  <title>Simulations of moist convection on tidally-locked rocky planets</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+    <link rel="stylesheet" href="mytheme.css"/>
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+    <!--[if lt IE 9]>
+    <script src="reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
 <body>
+  <div class="reveal">
+    <div class="slides">
+
+<section data-background-image="media/bg_image.jpg">
+    <h4 class="date">Climate Dynamics seminar | Exeter UK | 10 October 2019</h4>
+    <h1 class="title">Simulations of moist convection on tidally-locked rocky planets</h1>
+    <h2 class="author">Denis Sergeev,</h2>
+    <h2 class="author">Hugo Lambert, Nathan Mayne, Ian Boutle</h2>
+<center>
+    <img src="media/exeter_logo_white.png" style="height:75px; margin:50px 50px;">
+    <img src="media/metoffice_logo_white.png" style="height:75px; margin:50px 50px;">
+</center>
+  <h1 class="subtitle"><span style="font-size: 75%; color: #FFFFFF; ">Live demo: </span><a href="tiny.cc/">tiny.cc/</a></h1>
+</section>
+
+<section id="test" class="slide level1">
+<h1>Test</h1>
 <p>
-<iframe src="./view_scene.html?fileURL=./data/blah.vtkjs" width="100%" height="500px"></iframe>
+<iframe src="./view_scene.html?fileURL=./data/blah.vtkjs" width="1500px" height="500px">
+</iframe>
 </p>
-</body>
+</section>
+<section id="exoplanets" class="slide level1">
+<h1>Exoplanets</h1>
+<div class="w60">
+<blockquote>
+<em>Exoplanets</em> are <b>extrasolar</b> planets
+</blockquote>
+<ul style="font-size: 90%">
+<li>
+Point 1
+</li>
+</ul>
+</div>
+<div class="w35">
+<img src="media/tl_exoplanet_vr.png">
+<p class="lcred">
+<a href="https://www.engine-house.co.uk">Engine House Animation Studio</a>
+</p>
+</div>
+<p><br></p>
+<aside class="notes">
+</aside>
+</section>
+<section id="thanks" class="slide level1">
+<h1>Thanks!</h1>
+<center class="fragment fade-in" style="font-size:250%;">
+Questions?
+</center>
+<ul class="icon-list">
+<li>
+<a href="https://twitter.com/meteodenny"><i class="fa fa-twitter -square fa-lg"></i>Twitter: meteodenny</a>
+</li>
+<li>
+<a href="https://github.com/dennissergeev"><i class="fa fa-github -square fa-lg"></i>GitHub: dennissergeev</a>
+</li>
+<li>
+<a href="https://dennissergeev.github.io"><i class="fa fa-globe -square fa-lg"></i>Website: dennissergeev.github.io</a>
+</li>
+<li>
+<a href="https://dennissergeev.github.io/climdyn_seminar"><i class="fa fa-play-circle -square fa-lg"></i>This presentation: https://dennissergeev.github.io/climdyn_seminar</a>
+</li>
+</ul>
+<!--
+-->
+</section>
+    </div>
+  </div>
+
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      //width: '100%',
+      //height: '100%',
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        slideNumber: "c/t",
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: 'fade', // default/cube/page/concave/zoom/linear/fade/none
+        math: {
+            mathjax: 'MathJax/MathJax.js',
+            config: 'TeX-AMS_HTML-full',
+          },
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+	  { src: 'reveal.js/plugin/math/math.js', async: true },
+//          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+    </body>
 </html>
