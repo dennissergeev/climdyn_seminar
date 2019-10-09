@@ -1,9 +1,10 @@
 @import url("./reveal.js/css/theme/white.css");
-@import url("./icons/font-awesome/css/font-awesome.min.css");
-@import url("./icons/academicons/css/academicons.css");
+@import url("./fonts/font-awesome/css/font-awesome.min.css");
+@import url("./fonts/academicons/css/academicons.css");
+@import url("./fonts/exo2/exo2.css");
 
 .reveal {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Exo 2'!important;
   font-size: 28px;
   font-weight: 200;
   letter-spacing: -0.02em;
