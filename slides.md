@@ -17,7 +17,7 @@ transition: fade
 # Exoplanets 
 <div class="w60">
 <blockquote>
-<em>Exoplanets</em> are <b>extrasolar</b> planets
+<em>Exoplanets</em> are <b>extrasolar</b> planets $\lambda = W m^{-2}$
 </blockquote>
 <ul style="font-size: 90%">
 <li>Point 1</li>

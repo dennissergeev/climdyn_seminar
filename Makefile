@@ -5,7 +5,10 @@ ALL=index.html
 all: $(ALL)
 
 reveal.js:
-	git clone https://github.com/hakimel/reveal.js
+	git submodule add https://github.com/hakimel/reveal.js
+
+katex:
+	git submodule add https://github.com/katex/katex
 
 index.html : slides.md template.html
 	pandoc $< -o $@ --template=template.html --standalone --write=revealjs --css mytheme.css
