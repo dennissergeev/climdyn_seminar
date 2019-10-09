@@ -1,0 +1,4 @@
+*.pyc
+*.base64
+scene_*
+scene.webgl
