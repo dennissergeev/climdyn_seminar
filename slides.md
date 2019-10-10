@@ -69,12 +69,12 @@ transition: fade
 * We can test what convection scheme is "better" by running <b>convection-resolving</b> simulations
 
 
-# Global & regional simulations of Trappist-1e
+# Simulations of Trappist-1e
 <div class="w100">
 <iframe src="./view_scene.html?fileURL=./data/tsfc_cloudvol_wind_ilev20_precip__ns_reg__toa_osr__trap1e_acoff_n96.vtkjs" width="100%" height="700px"></iframe>
 </div>
 
-# Regional simulations of Trappist-1e
+# Convection-resolving runs
 <div class="w100">
 <iframe src="./view_scene.html?fileURL=./data/vert_wind_ns_reg__trap1e_acoff_n96.vtkjs" width="100%" height="700px"></iframe>
 </div>

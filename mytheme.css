@@ -27,6 +27,9 @@
   -moz-hyphens: none;
   hyphens: none;
 }
+.reveal h1 {
+  font-size: 28px;
+}
 
 .reveal .title {
   margin: 25px 0 40px 0;
