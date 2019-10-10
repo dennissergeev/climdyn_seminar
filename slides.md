@@ -46,19 +46,19 @@ transition: fade
 #
 <div class="w45">
   <h3>Trappist-1e</h3>
-  <iframe src="./view_scene.html?fileURL=./data/tsfc_trap1e_ctrl_n96.vtkjs" width="400px" height="300px"></iframe>
+  <iframe src="./view_scene.html?fileURL=./data/tsfc_wind_ilev20__trap1e_ctrl_n96.vtkjs" width="400px" height="300px"></iframe>
 </div>
 <div class="w45">
   <h3>Proxima b</h3>
-  <iframe src="./view_scene.html?fileURL=./data/tsfc_trap1e_ctrl_n96.vtkjs" width="400px" height="300px"></iframe>
+  <iframe src="./view_scene.html?fileURL=./data/tsfc_wind_ilev20__proxb_ctrl_n96.vtkjs" width="400px" height="300px"></iframe>
 </div>
 <br>
 <span class="fragment fade-in">
 <div class="w45">
-<iframe src="./view_scene.html?fileURL=./data/tsfc_trap1e_ctrl_n96.vtkjs" width="400px" height="300px"></iframe>
+<iframe src="./view_scene.html?fileURL=./data/tsfc_wind_ilev20__trap1e_acoff_n96__minus__trap1e_ctrl_n96.vtkjs" width="400px" height="300px"></iframe>
 </div>
 <div class="w45">
-<iframe src="./view_scene.html?fileURL=./data/tsfc_trap1e_ctrl_n96.vtkjs" width="400px" height="300px"></iframe>
+<iframe src="./view_scene.html?fileURL=./data/tsfc_wind_ilev20__proxb_acoff_n96__minus__proxb_ctrl_n96.vtkjs" width="400px" height="300px"></iframe>
 </div>
 </span>
 
@@ -71,12 +71,12 @@ transition: fade
 
 # Global & regional simulations of Trappist-1e
 <div class="w100">
-<iframe src="./view_scene.html?fileURL=./data/tsfc_cloudvol_wind_ilev20_precip__trap1e_ctrl_n96.vtkjs" width="100%" height="700px"></iframe>
+<iframe src="./view_scene.html?fileURL=./data/tsfc_cloudvol_wind_ilev20_precip__ns_reg__toa_osr__trap1e_acoff_n96.vtkjs" width="100%" height="700px"></iframe>
 </div>
 
 # Regional simulations of Trappist-1e
 <div class="w100">
-<iframe src="./view_scene.html?fileURL=./data/tsfc_cloudvol_wind_ilev20_precip__trap1e_ctrl_n96.vtkjs" width="100%" height="700px"></iframe>
+<iframe src="./view_scene.html?fileURL=./data/vert_wind_ns_reg__trap1e_acoff_n96.vtkjs" width="100%" height="700px"></iframe>
 </div>
 
 # Work in progress

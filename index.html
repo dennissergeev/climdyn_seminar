@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <meta name="author" content="Denis Sergeev," />
-  <meta name="author" content="Hugo Lambert, Nathan Mayne, Ian Boutle" />
+  <meta name="author" content="Denis Sergeev" />
   <title>Simulations of moist convection on tidally-locked rocky planets</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -34,65 +33,131 @@
 <section data-background-image="media/bg_image.jpg">
     <h4 class="date">Climate Dynamics seminar | Exeter UK | 10 October 2019</h4>
     <h1 class="title">Simulations of moist convection on tidally-locked rocky planets</h1>
-    <h2 class="author">Denis Sergeev,</h2>
-    <h2 class="author">Hugo Lambert, Nathan Mayne, Ian Boutle</h2>
+    <h2 class="author">Denis Sergeev</h2>
 <center>
     <img src="media/exeter_logo_white.png" style="height:75px; margin:50px 50px;">
     <img src="media/metoffice_logo_white.png" style="height:75px; margin:50px 50px;">
 </center>
-  <h1 class="subtitle"><span style="font-size: 75%; color: #FFFFFF; ">Live demo: </span><a href="tiny.cc/">tiny.cc/</a></h1>
+  <h1 class="subtitle"><span style="font-size: 75%; color: #FFFFFF; ">Live demo: </span><a href="tiny.cc/climdyn_demo">tiny.cc/climdyn_demo</a></h1>
 </section>
 
-<section id="test" class="slide level1">
-<h1>Test</h1>
-<p>
-<iframe src="./view_scene.html?fileURL=./data/blah.vtkjs" width="1500px" height="500px">
-</iframe>
-</p>
-</section>
-<section id="exoplanets" class="slide level1">
-<h1>Exoplanets</h1>
-<div class="w60">
-<blockquote>
-<em>Exoplanets</em> are <b>extrasolar</b> planets <span class="math inline"><em>λ</em> = <em>W</em><em>m</em><sup> − 2</sup></span>
-</blockquote>
-<ul style="font-size: 90%">
-<li>
-Point 1
-</li>
+<section id="what-are-exoplanets" class="slide level1">
+<h1>What are exoplanets?</h1>
+<ul>
+<li>Exoplanets (extrasolar planets) planets orbiting stars other than our Sun</li>
+<li>As of 10 Oct 2019, <b>4057</b> exoplanets are confirmed (NASA Archive)</li>
+<li>Most of them orbit M-dwarf stars - cooler and “redder” than the Sun</li>
 </ul>
+</section>
+<section id="what-am-i-focusing-on" class="slide level1">
+<h1>What am I focusing on?</h1>
+<ul>
+<li>Terrestrial (rocky, Earth-like) exoplanets</li>
+<li>Example: <b>Trappist-1</b> system, Proxima Centauri b, LHS1140b, and many more</li>
+<li>In particular: <b>tidally-locked</b> planets</li>
+</ul>
+<span class="fragment fade-in">
+<div class="w100">
+<img src="media/trappist1_orbits.jpg">
+<p class="lcred">
+Credit: ESA/Hubble
+</p>
 </div>
-<div class="w35">
+<p></span></p>
+</section>
+<section id="what-is-a-tidally-locked-planet" class="slide level1">
+<h1>What is a tidally-locked planet?</h1>
+<div class="w100">
 <img src="media/tl_exoplanet_vr.png">
 <p class="lcred">
 <a href="https://www.engine-house.co.uk">Engine House Animation Studio</a>
 </p>
 </div>
-<p><br></p>
-<aside class="notes">
-</aside>
 </section>
-<section id="thanks" class="slide level1">
-<h1>Thanks!</h1>
-<center class="fragment fade-in" style="font-size:250%;">
-Questions?
-</center>
-<ul class="icon-list">
-<li>
-<a href="https://twitter.com/meteodenny"><i class="fa fa-twitter -square fa-lg"></i>Twitter: meteodenny</a>
+<section id="gcm-simulation-of-trappist-1e" class="slide level1">
+<h1>GCM simulation of Trappist-1e</h1>
+<div class="w100">
+<iframe src="./view_scene.html?fileURL=./data/tsfc_cloudvol_wind_ilev20_precip__trap1e_ctrl_n96.vtkjs" width="100%" height="700px">
+</iframe>
+</div>
+</section>
+<section id="convection-on-exoplanets" class="slide level1">
+<h1>Convection on exoplanets</h1>
+<ul>
+<li><b>Hypothesis</b>: convection regulates climate on Trappist-1e</li>
+<li>How to test this?</li>
+<li>Run a global 3D GCM (UK MO Unified Model) with different convective parameterisations</li>
+<li>… or switch convection scheme off and let the model deal with it</li>
+</ul>
+</section>
+<section id="section" class="slide level1">
+<h1></h1>
+<div class="w45">
+<h3>
+Trappist-1e
+</h3>
+<p><iframe src="./view_scene.html?fileURL=./data/tsfc_wind_ilev20__trap1e_ctrl_n96.vtkjs" width="400px" height="300px"></iframe></p>
+</div>
+<div class="w45">
+<h3>
+Proxima b
+</h3>
+<p><iframe src="./view_scene.html?fileURL=./data/tsfc_wind_ilev20__proxb_ctrl_n96.vtkjs" width="400px" height="300px"></iframe></p>
+</div>
+<br> <span class="fragment fade-in">
+<div class="w45">
+<iframe src="./view_scene.html?fileURL=./data/tsfc_wind_ilev20__trap1e_acoff_n96__minus__trap1e_ctrl_n96.vtkjs" width="400px" height="300px">
+</iframe>
+</div>
+<div class="w45">
+<iframe src="./view_scene.html?fileURL=./data/tsfc_wind_ilev20__proxb_acoff_n96__minus__proxb_ctrl_n96.vtkjs" width="400px" height="300px">
+</iframe>
+</div>
+<p></span></p>
+</section>
+<section id="so-what" class="slide level1">
+<h1>So what?</h1>
+<ul>
+<li>Convection in GCMs regulates the climate not only of the day side, but (even more so) of the night side</li>
+<li>Using a simple convection scheme can have different effects for different planets</li>
+<li>We can test what convection scheme is “better” by running <b>convection-resolving</b> simulations</li>
+</ul>
+</section>
+<section id="global-regional-simulations-of-trappist-1e" class="slide level1">
+<h1>Global &amp; regional simulations of Trappist-1e</h1>
+<div class="w100">
+<iframe src="./view_scene.html?fileURL=./data/tsfc_cloudvol_wind_ilev20_precip__ns_reg__toa_osr__trap1e_acoff_n96.vtkjs" width="100%" height="700px">
+</iframe>
+</div>
+</section>
+<section id="regional-simulations-of-trappist-1e" class="slide level1">
+<h1>Regional simulations of Trappist-1e</h1>
+<div class="w100">
+<iframe src="./view_scene.html?fileURL=./data/vert_wind_ns_reg__trap1e_acoff_n96.vtkjs" width="100%" height="700px">
+</iframe>
+</div>
+</section>
+<section id="work-in-progress" class="slide level1">
+<h1>Work in progress</h1>
+<ul>
+<li>Caveat: <b>one-way</b> nesting</li>
+<li><b>How to assess the impact of high-res simulations on the global climate?</b></li>
+</ul>
+Some ideas:
+<ul>
+<li class="fragment">
+Run a series global experiments with different convection schemes
 </li>
-<li>
-<a href="https://github.com/dennissergeev"><i class="fa fa-github -square fa-lg"></i>GitHub: dennissergeev</a>
+<li class="fragment">
+Integrate the vertical flux of moisture over the substellar region
 </li>
-<li>
-<a href="https://dennissergeev.github.io"><i class="fa fa-globe -square fa-lg"></i>Website: dennissergeev.github.io</a>
+<li class="fragment">
+Calculate correlation with a night-side parameter
 </li>
-<li>
-<a href="https://dennissergeev.github.io/climdyn_seminar"><i class="fa fa-play-circle -square fa-lg"></i>This presentation: https://dennissergeev.github.io/climdyn_seminar</a>
+<li class="fragment">
+Extrapolate for the flux calculated from the nested simulations
 </li>
 </ul>
-<!--
--->
 </section>
     </div>
   </div>
@@ -116,7 +181,7 @@ Questions?
         theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
         transition: 'fade', // default/cube/page/concave/zoom/linear/fade/none
         math: {
-            mathjax: 'KaTeX/katex.js',
+            mathjax: 'katex/katex.js',
             config: 'TeX-AMS_HTML-full',
           },
 
