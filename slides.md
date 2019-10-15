@@ -33,9 +33,9 @@ transition: fade
 </div>
 
 # GCM simulation of Trappist-1e
-<div class="w100">
-<iframe src="./view_scene.html?fileURL=./data/tsfc_cloudvol_wind_ilev20_precip__trap1e_ctrl_n96.vtkjs" width="100%" height="700px"></iframe>
-</div>
+<section data-background-iframe="./view_scene.html?fileURL=./data/tsfc_cloudvol_wind_ilev20_precip__trap1e_ctrl_n96.vtkjs" data-background-interactive>
+</section>
+
 
 # Convection on exoplanets
 * <b>Hypothesis</b>: convection regulates climate on Trappist-1e
@@ -70,14 +70,12 @@ transition: fade
 
 
 # Simulations of Trappist-1e
-<div class="w100">
-<iframe src="./view_scene.html?fileURL=./data/tsfc_cloudvol_wind_ilev20_precip__ns_reg__toa_osr__trap1e_acoff_n96.vtkjs" width="100%" height="700px"></iframe>
-</div>
+<section data-background-iframe="./view_scene.html?fileURL=./data/tsfc_cloudvol_wind_ilev20_precip__ns_reg__toa_osr__trap1e_acoff_n96.vtkjs" data-background-interactive>
+</section>
 
 # Convection-resolving runs
-<div class="w100">
-<iframe src="./view_scene.html?fileURL=./data/vert_wind_ns_reg__trap1e_acoff_n96.vtkjs" width="100%" height="700px"></iframe>
-</div>
+<section data-background-iframe="./view_scene.html?fileURL=./data/vert_wind_ns_reg__trap1e_acoff_n96.vtkjs" data-background-interactive>
+</section>
 
 # Work in progress
 * Caveat: <b>one-way</b> nesting
